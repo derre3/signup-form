@@ -44,7 +44,8 @@ section:nth-child(1) {
 form > div,
 button,
 .main-text {
-    margin-left: 50px
+    margin-left: 50px;
+    margin-right: 200px;
 }
 
 section:nth-child(2) {
