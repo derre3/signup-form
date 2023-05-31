@@ -17,33 +17,32 @@
         </section>
 
         <section>
-            <div>
+            <div class="main-text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam repellat deleniti ipsam tempora praesentium doloribus, cum optio velit repudiandae iure natus rem voluptatibus consequuntur aut consectetur voluptas obcaecati? Velit.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <form action="post">
                 <fieldset>
-                    <div>
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                    <legend><h2>Let's do this!</h2></legend>
+                    <ul>
+                        <li>
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
 
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
-                    </div>
-                    <div>
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
-                    <div>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </div>
+                        </li>
+                        <li>
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" name="lname" id="lname">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                            <label for="password-check">CONFIRM PASSWORD</label>
+                            <input type="password" name="password-check" id="password-check">
+                        </li>
+                    </ul>
                 </fieldset>
                 <button type="submit">Create Account</button>
                 <div>Already have an account? <a href="http://">Log in</a></div>
