@@ -49,6 +49,10 @@ img {
     margin-top: 4em;
 }
 
+section:nth-child(1) p {
+    margin-bottom: 5px;
+}
+
 .left-footer {
     margin-bottom: 1em;
 }
@@ -71,6 +75,10 @@ section:nth-child(2) {
 section:nth-child(2) a {
     text-decoration: none;
     color: #8b1bf3;
+}
+
+section:nth-child(2) a:hover {
+    text-decoration: underline;
 }
 
 .main-text {
@@ -119,7 +127,22 @@ button {
     color: #ffffff;
     margin-top: 30px;
     margin-bottom: 20px;
+    border-width: 1px;
     border-radius: 5px;
+    border-style: solid;
+    cursor: pointer;
+    transition: transform 600ms;
+
+}
+
+button:hover {
+    transform: translateY(-0.35rem);
+    transition: 150ms;
+}
+
+button:active {
+    transition: 50ms;
+    box-shadow: inset 1px 3px 12px 0px #383838;
 }
 
 input {
@@ -148,7 +171,6 @@ input:invalid {
     border-color: red;
     background-color: rgba(255, 0, 0, 0.301);
 }
-
 
 input:invalid:focus {
     border-color: red;
