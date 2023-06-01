@@ -29,21 +29,21 @@
                     <legend><h2>Let's do this!</h2></legend>
                     <ul>
                         <li>
-                            <label for="fname">FIRST NAME</label>
-                            <input type="text" name="fname" id="fname">
-                            <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
-
+                            <label for="fname">*FIRST NAME</label>
+                            <input type="text" name="fname" id="fname" required placeholder=" ">
+                            <label for="email" data-help="email@example.com">*EMAIL</label>
+                            <input type="email" name="email" id="email" required placeholder=" ">
+                            <label for="password" data-help="at least 8 digits">*PASSWORD</label>
+                            <input type="password" name="password" id="password" required placeholder=" " minlength="8">
+                            <p></p>
                         </li>
                         <li>
                             <label for="lname">LAST NAME</label>
-                            <input type="text" name="lname" id="lname">
-                            <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" name="phone" id="phone">
-                            <label for="password-check">CONFIRM PASSWORD</label>
-                            <input type="password" name="password-check" id="password-check">
+                            <input type="text" name="lname" id="lname" placeholder=" ">
+                            <label for="phone" data-help="123-456-7890">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" placeholder=" " pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                            <label for="password-check" data-help="at least 8 digits">*CONFIRM PASSWORD</label>
+                            <input type="password" name="password-check" id="password-check" required placeholder=" " minlength="8">
                         </li>
                     </ul>
                 </fieldset>
